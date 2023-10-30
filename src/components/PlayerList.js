@@ -1,5 +1,10 @@
 const PlayerList = (props) => {
-  return (<h1>This is the PlayerList</h1>);
+  return (
+    <section className="PlayerList">
+      <h1>Current participating players</h1>
+      {/* Players will be shown here */}
+    </section>
+    );
 };
 
 export default PlayerList;

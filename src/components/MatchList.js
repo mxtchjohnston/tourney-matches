@@ -1,5 +1,9 @@
 const MatchList = (props) => {
-  return (<h1>This is the MatchList</h1>);
+  return (
+    <section className="PlayerList MatchList">
+      <h1>Match List</h1>
+    </section>
+  );
 };
 
 export default MatchList;
