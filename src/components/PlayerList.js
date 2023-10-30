@@ -9,7 +9,7 @@ const PlayerList = (props) => {
   return (
     <section className="PlayerList">
       <h1>Current participating players</h1>
-      {parsedPlayerData.map(player => <Player {...player}/>)}
+      {parsedPlayerData.map(player => <Player key={player.gamerTag}{...player}/>)}
     </section>
     );
 };

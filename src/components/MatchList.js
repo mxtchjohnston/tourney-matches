@@ -5,7 +5,7 @@ const MatchList = (props) => {
   return (
     <section className="PlayerList MatchList">
       <h1>Match List</h1>
-      {matchData.map(match => <Match {...match}/>)}
+      {matchData.map(match => <Match key={match.matchNumber} {...match}/>)}
     </section>
   );
 };
