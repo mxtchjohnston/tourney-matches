@@ -2,11 +2,10 @@ const Player = (props) => {
   return (
     <article className="Player">
     <h1>
-      John <span>Secret</span> Doe
+      {props.firstName} <span>{props.gamerTag}</span> {props.lastName}
     </h1>
     <h2 className="zero">Currently with no wins</h2>
-    <h2>Currently at 1 win</h2>
-    <h2>Currently at 1+ wins</h2>
+    <h2>Currently at {props.wins} wins</h2>
     </article>
   );
 };
